@@ -1,0 +1,90 @@
+<!-- Author: Justin Cao -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- HTML Page Header -->
+    <title>Nuxoll's Cheesecake Factory</title>
+
+    <!-- External Link to CSS file -->
+    <link rel="stylesheet" href="stylesheets/styles.css">
+
+    <!-- Load the jQuery library -->
+    <script
+    src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+
+    <!-- Reference to JavaScript code in separate file -->
+    <script src="javascripts/cheesecake.js"></script>
+
+</head>
+<body>
+    <!-- Page Title -->
+    <h1>Cheesecake Order Form</h1>
+
+    <!-- The image url used to display the Cheesecake from Wikimedia-->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" alt="Cheesecake Wikimedia" width="300" height="300">
+    <p id = "amountOfToppings">Quantity Topping</p>
+
+    <!-- Table consisting of a dropdown to select the quantity of toppings and radio buttons to select the type of topping -->
+    <table>
+        <tr>
+            <td>
+                <select name="numToppings" id="numToppings">
+                    <option value="zero toppings">0</option>
+                    <option value="one toppings">1</option>
+                    <option value="two toppings">2</option>
+                    <option value="three toppings">3</option>
+                    <option value="four toppings">4</option>
+                </select>
+            </td>
+            <td>
+                <form id = "toppingType">
+                    <input type="radio" id="plain" name="topping" value="plain">
+                    <label for="plain">Plain</label><br>
+                    <input type="radio" id="cherry" name="topping" value="cherry">
+                    <label for="cherry">Cherry</label><br>
+                    <input type="radio" id="chocolate" name="topping" value="chocolate">
+                    <label for="chocolate">Chocolate</label>
+                </form>
+            </td>
+        </tr>
+      </table>
+
+    <!-- Notes for special instructions in the cheesecake order -->
+    <p id = "notesLabel">Notes:</p>
+    <textarea id="notesText" placeholder="Enter any special instructions here" rows="4" cols="50"></textarea>
+
+    <!-- Breakline to position the following button below the textbox-->
+    <br>
+
+    <!-- Order Button -->
+    <button type="orderButton" id="orderButton"> Order</button>
+
+    <!--Hover Dropdown Menu-->
+    <h3>Orders for 
+        <div class="dropdown">
+            <button class="dropButton" id="dropButton">Month</button>
+            <div class="dropdown-content" id="dropdown">
+                <a href="#" id="januaryButton">Jan</a>
+                <a href="#" id="februaryButton">Feb</a>
+                <a href="#" id="marchButton">Mar</a>
+                <a href="#" id="aprilButton">Apr</a>
+                <a href="#" id="mayButton">May</a>
+                <a href="#" id="juneButton">Jun</a>
+                <a href="#" id="julyButton">Jul</a>
+                <a href="#" id="augustButton">Aug</a>
+                <a href="#" id="septemberButton">Sep</a>
+                <a href="#" id="novemberButton">Nov</a>
+                <a href="#" id="decemberButton">Dec</a>
+            </div>
+        </div>
+    </h3>
+
+    <!-- List of Past Cheesecake Orders data. To be modified in the next homework -->
+    <ul>
+        <li>11 cherry</li>
+        <li>17 chocolate</li>
+        <li>31 plain</li>
+    </ul>
+</body>
+</html>
