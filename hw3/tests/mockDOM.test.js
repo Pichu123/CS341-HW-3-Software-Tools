@@ -1,3 +1,4 @@
+//Author: Justin Cao
 var fs = require('fs');
 
 test('test selectEvent', () => {

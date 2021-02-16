@@ -1,3 +1,4 @@
+//Author: Justin Cao
 // Processing the order
 $(document).ready(function(){
     $("#orderButton").click(eventHandler);
